@@ -1,0 +1,13 @@
+service: my-nextjs-app
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: us-east-1
+
+plugins:
+  - serverless-next.js
+
+custom:
+  serverless-nextjs:
+    component: "@sls-next/serverless-component@1.18.0"
